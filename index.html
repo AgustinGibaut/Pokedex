@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h1 class="logo">
+                <img src="img/International_Pokémon_logo.svg.png" alt="Pikachu" class="pikachu-img">
+                Pokedex
+            </h1>
+    
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li class="search-input">
+                    <label for="pokemonInput" class="visually-hidden">Buscar Pokémon</label>
+                    <input type="text" id="pokemonInput" placeholder="Buscar pokemon..." />
+                    <button id="buscarBtn" aria-label="Buscar"><i class="fa fa-search"></i></button>
+                </li>
+            </ul>
+            <div class="socials">
+                <a href="https://github.com/AgustinGibaut" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/agustin-gibaut-61baa5327/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="resultado" class="pokemon-card-container"></div>
+    </main>
+<section id="inicio" class="intro-text">
+    <h2>Encuentra tu personaje favorito de Pokémon</h2>
+    <main>
+        <div id="resultado" class="pokemon-card-container"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
